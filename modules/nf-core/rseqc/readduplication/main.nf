@@ -8,7 +8,7 @@ process RSEQC_READDUPLICATION {
         'biocontainers/rseqc:5.0.3--py39hf95cd2a_0' }"
 
     input:
-    tuple val(meta), path(bam)
+    tuple val(meta), path(bam), path(bai)
 
     output:
     tuple val(meta), path("*seq.DupRate.xls"), emit: seq_xls

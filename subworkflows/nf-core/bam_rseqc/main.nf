@@ -19,7 +19,7 @@ workflow BAM_RSEQC {
 
     main:
 
-    bam = bam_bai.map{ [ it[0], it[1] ] }
+    bam = bam_bai.map { [it[0], it[1]] }
 
     versions = Channel.empty()
 
